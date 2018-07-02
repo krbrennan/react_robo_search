@@ -1,5 +1,5 @@
 {
-  "name": "robofriends",
+  "name": "react_robo_search",
   "homepage": "https://krbrennan.github.io/react_robo_search/",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +17,7 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "tachyons": "^4.10.0",
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^1.2.0",
+    "tachyons": "^4.10.0"
   }
 }
