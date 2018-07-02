@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
-import robots from './robots.js';
 import SearchBox from './SearchBox.js';
 import Scroll from './Scroll';
 import './App.css';
