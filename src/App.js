@@ -3,20 +3,25 @@ import CardList from './CardList';
 import SearchBox from './SearchBox.js';
 import Scroll from './Scroll';
 import './App.css';
+import Robots from './robots'
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      robots: [],
+      robots: Robots.map(robot => robot),
       searchField: ''
     }
   }
 
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(users => this.setState({robots: users}));
+    // Initially used boilerplate users but later decided to make my own
+    // small db of users
+
+    // fetch('https://jsonplaceholder.typicode.com/users')
+    //   .then(response => response.json())
+    //   .then(users => this.setState({robots: users}));
+    //   console.log(this.state.robots.map(rob => rob))
   }
 
   onSearchChange = (event) => {
@@ -35,7 +40,7 @@ class App extends Component {
           <CardList robots={filteredRobots} />
         </Scroll>
       </div>
-    );
+    )
   }
 }
 
